@@ -3,7 +3,6 @@ $("document").ready(function() {
   // VARIABLES
   let sWidth = $(screen).innerWidth();
   let sHeight = $(screen).innerHeight();
-  $("#root").css("width", sWidth);
   // IF STATEMENTS
   if (sHeight >= sWidth){
     showMobileDiv();
@@ -35,6 +34,5 @@ $("document").ready(function() {
     if (sHeight < sWidth) {
       hideMobileDiv();
     }
-    $("#root").css("width", sWidth);
   });
 });
