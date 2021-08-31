@@ -38,5 +38,6 @@ $("document").ready(function() {
     }
     $("#root").css("width", sWidth);
     $("#root").css("height", sHeight);
+    // wonders
   });
 });
