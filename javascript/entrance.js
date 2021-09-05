@@ -13,14 +13,10 @@ $("document").ready(function() {
   }
   // FUNCTIONS
   function hideMobileDiv() {
-    $("#mobileDiv").hide();
-    $("#all").show();
-    $("#root").show();
+    $("#style").attr("href", "css/entrance.css");
   }
   function showMobileDiv() {
-    $("#mobileDiv").show();
-    $("#all").hide();
-    $("#root").hide();
+    $("#style").attr("href", "css/entranceMobile.css");
   }
   // START
   $(window).resize(function() {
@@ -36,8 +32,5 @@ $("document").ready(function() {
     if (sHeight < sWidth) {
       hideMobileDiv();
     }
-    $("#root").css("width", sWidth);
-    $("#root").css("height", sHeight);
-    // wonders
   });
 });
