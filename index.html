@@ -3,43 +3,31 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entrance</title>
-  <link rel="stylesheet" type="text/css" id="style" href="css/entrance.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Traveling Carnival</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css\style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="javascript/entrance.js"></script>
 </head>
 
 <body>
-  <div id="all" style="background-image: url('images/background.png'); background-size: cover;">
-    <div id="pebsCorner">
-      <div id="topHalf">
-        <img id="pebbles" src="images/pebblesFloat.gif">
-      </div>
-      <div id="bottomHalf">
-        <img id="standBottom" src="images/bottomStand.png">
-      </div>
-    </div>
+  <div>
+    <img id="root" src="images/Map/background.png">
   </div>
-  <img id="standTop" src="images/topStand.png">
-  <div id="bubbleHolder">
-    <div id="floaterUp"></div>
-    <div id="chat">
-      <div id="spacer"></div>
-      <div id="bubble">
-        <p>Welcome to the traveling carnival. I'm showrunner Pebbles! How may I assist you today?</p>
-      </div>
-      <img id="tail" src="images/tail.png">
-    </div>
-    <div id="floaterDown"></div>
+  <script src="javascript\main.js" type="text/javascript"></script>
+  <div id="mobileDiv" style="text-align:center; z-index:2;">
+    <h1>Please rotate your device to be able to enjoy the experience!</h1>
+    <img style="max-width:200px;" src="images\rotateScreen.png">
   </div>
-  <div id="links">
-    <div id="linkHolder">
-      <a href="https://personajetm.wixsite.com/personaje"><h1 class="link1">Website</h1></a>
-      <a href="https://personaje.carrd.co/"><h1 class="link2">Carrd</h1></a>
-      <a><h1 class="link3">Gumroad</h1></a>
-      <a href="index.html"><h1 class="link3">Back to the Carnival</h1></a>
-    </div>
+  <div id="all">
+    <a href="ferrisWheel.html"><img class="place" style="max-width: 15%;" id="ferrisWheel" src="images/Map/ferrisWheel.png"></a>
+    <a href="foodCourt.html"><img class="place" style="max-width: 16%;" id="foodCourt" src="images/Map/foodCourt.png"></a>
+    <a href="games.html"><img class="place" style="max-width: 18%;" id="games" src="images/Map/carnivalGames.png"></a>
+    <a href="booths.html"><img class="place" style="max-width: 19%;" id="booths" src="images/Map/booths.png"></a>
+    <a><img class="place" style="max-width: 16%;" id="circus" src="images/Map/circus.png"></a>
+    <a><img class="place" style="max-width: 15%;" id="staffRoom" src="images/Map/staffRoom.png"></a>
+    <a href="entrance.html"><img class="place" style="max-width: 26%;" id="entrance" src="images/Map/entrance.png"></a>
+    <a><img class="place" style="max-width: 16%;" id="dunkTank" src="images/Map/dunkTank.png"></a>
   </div>
 </body>
 
